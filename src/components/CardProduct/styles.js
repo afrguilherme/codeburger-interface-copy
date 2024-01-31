@@ -19,7 +19,8 @@ export const Container = styled.div`
 `
 
 export const Image = styled.img`
-  width: 150px;
+  width: 100px;
+  max-height: 98px;
   border-radius: 20px;
 `
 

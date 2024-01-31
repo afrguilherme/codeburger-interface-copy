@@ -1,9 +1,11 @@
 import styled from 'styled-components'
+
 import { Button } from '../../../components/Button'
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 80px;
   align-items: center;
   width: 100%;
   max-width: 350px;

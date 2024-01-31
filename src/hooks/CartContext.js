@@ -64,6 +64,10 @@ export const CartProvider = ({ children }) => {
     }
   }
 
+  const clearCart = () => {
+    setCartProducts([])
+  }
+
   useEffect(() => {
     const loadCartData = async () => {
       const clientCartData = await localStorage.getItem('codeburger:cartInfo')
@@ -81,7 +85,8 @@ export const CartProvider = ({ children }) => {
         putProductInCart,
         cartProducts,
         increaseProducts,
-        decreaseProducts
+        decreaseProducts,
+        clearCart
       }}
     >
       {children}

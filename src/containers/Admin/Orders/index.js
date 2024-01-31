@@ -6,10 +6,11 @@ import TableContainer from '@mui/material/TableContainer'
 import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import React, { useEffect, useState } from 'react'
+
 import api from '../../../services/api'
+import formatDate from '../../../utils/formatDate'
 import status from './orders-status'
 import Row from './row'
-import formatDate from '../../../utils/formatDate'
 import { Container, Menu, LinkMenu } from './styles'
 
 function Orders() {

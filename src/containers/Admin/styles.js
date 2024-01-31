@@ -14,6 +14,5 @@ export const ContainerItems = styled.div`
   width: 100%;
   min-height: 100vh;
   justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+  padding: 20px 0;
 `

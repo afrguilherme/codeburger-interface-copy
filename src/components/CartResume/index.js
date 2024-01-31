@@ -13,7 +13,7 @@ export function CartResume() {
   const [totalPrice, setTotalPrice] = useState(0)
   const [calculatedTax, setCalculatedTax] = useState()
 
-  const { cartProducts } = useCart()
+  const { cartProducts, clearCart } = useCart()
 
   useEffect(() => {
     const sumAllItems = cartProducts.reduce((acc, current) => {
@@ -37,6 +37,8 @@ export function CartResume() {
         pending: 'Realizando o seu pedido...',
         success: 'Pedido realizado com sucesso!'
       })
+
+      clearCart()
     } catch (error) {
       toast.error('Falha ao tentar realizar seu pedido, tente novamente!')
     }
